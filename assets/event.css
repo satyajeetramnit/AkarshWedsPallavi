@@ -118,7 +118,7 @@ a{color:inherit;}
       .invite-names .weds {
         font-family: var(--disp);
         font-size: clamp(0.8rem, 2vw, 1.1rem);
-        letter-spacing: 0.5em;
+        word-spacing: 0.5em;
         text-transform: uppercase;
         color: var(--gold-deep);
         padding-left: 2.42em;

@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Kamayani & Ankit — Nahargarh Palace, Ranthambore · 31 Oct & 1 Nov 2026
+      Akarsh &amp; Pallavi — Wedding Celebration · Hotel Ramada, Jamshedpur
     </title>
     <meta
       name="description"
-      content="Together with their families, Kamayani & Ankit invite you to celebrate their wedding at Nahargarh Palace, Ranthambore — 31 October & 1 November 2026."
+      content="Together with their families, Akarsh &amp; Pallavi invite you to celebrate their wedding ceremonies from 23 to 27 November 2026 in Jamshedpur &amp; Ranchi."
     />
     <meta
       property="og:title"
-      content="Kamayani weds Ankit — Wedding Invitation"
+      content="Akarsh weds Pallavi — Wedding Invitation"
     />
     <meta
       property="og:description"
-      content="31 Oct & 1 Nov 2026 · Nahargarh Palace, Ranthambore. Step through the gates and celebrate with us."
+      content="23, 24, 25 &amp; 27 November 2026 · Hotel Ramada, Jamshedpur &amp; Ranchi. Step through the gates and celebrate with us."
     />
 
     <script src="assets/site-data.js"></script>
@@ -545,7 +545,8 @@
         font-family: var(--sans);
         font-size: clamp(0.78rem, 1.9vw, 0.95rem);
         font-weight: 600;
-        letter-spacing: 0.28em;
+        word-spacing: 0.28em;
+        /* letter-spacing: 0.28em; */
         line-height: 2;
         text-transform: uppercase;
         color: var(--cream-text);
@@ -595,6 +596,260 @@
       .invite-where b {
         color: var(--gold-deep);
         font-weight: 600;
+      }
+
+      /* ========== PATRIKA / FAMILY LINEAGE & DETAILS ========== */
+      .shloka-box {
+        font-family: var(--deva);
+        font-size: clamp(0.95rem, 2.2vw, 1.25rem);
+        color: var(--wine-deep);
+        line-height: 1.8;
+        text-align: center;
+        margin: 0 auto 28px;
+        padding: 16px 24px;
+        max-width: 680px;
+        background: rgba(255, 255, 255, 0.55);
+        border: 1px solid rgba(190, 151, 47, 0.4);
+        border-radius: 14px;
+        box-shadow: 0 4px 22px rgba(122, 42, 65, 0.06);
+      }
+      .patrika-sec {
+        position: relative;
+        margin: clamp(28px, 4.5vw, 48px) auto 0;
+        max-width: 920px;
+      }
+      .patrika-grid {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 18px;
+        align-items: stretch;
+        margin: 32px 0 28px;
+      }
+      .patrika-card {
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid rgba(190, 151, 47, 0.45);
+        border-radius: 16px;
+        padding: clamp(22px, 3.5vw, 32px) clamp(18px, 3vw, 26px);
+        box-shadow: 0 10px 30px rgba(122, 42, 65, 0.08);
+        backdrop-filter: blur(8px);
+        position: relative;
+        text-align: center;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      .patrika-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 36px rgba(122, 42, 65, 0.14);
+      }
+      .patrika-badge {
+        display: inline-block;
+        font-family: var(--sans);
+        font-size: 0.65rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--wine);
+        background: rgba(190, 151, 47, 0.16);
+        border: 1px solid rgba(190, 151, 47, 0.35);
+        border-radius: 20px;
+        padding: 5px 16px;
+        margin: 0 auto 12px;
+      }
+      .patrika-person {
+        font-family: var(--deva);
+        font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+        font-weight: 700;
+        color: var(--wine-deep);
+        margin-bottom: 4px;
+        line-height: 1.25;
+      }
+      .patrika-person-en {
+        font-family: var(--disp);
+        font-size: clamp(0.95rem, 2vw, 1.2rem);
+        color: var(--gold-deep);
+        letter-spacing: 0.12em;
+        margin-bottom: 14px;
+        text-transform: uppercase;
+      }
+      .patrika-divider-sm {
+        width: 48px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        margin: 0 auto 16px;
+      }
+      .patrika-relation {
+        font-size: 0.92rem;
+        color: var(--ink);
+        line-height: 1.7;
+        margin-bottom: 8px;
+      }
+      .patrika-relation b {
+        color: var(--wine);
+        font-weight: 600;
+      }
+      .patrika-addr {
+        margin-top: auto;
+        padding-top: 14px;
+        font-size: 0.84rem;
+        color: var(--ink-soft);
+        border-top: 1px dashed rgba(190, 151, 47, 0.35);
+        line-height: 1.6;
+      }
+      .patrika-mid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4px;
+      }
+      .sang-symbol {
+        font-family: var(--deva);
+        font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+        font-weight: 700;
+        color: var(--gold-deep);
+        display: block;
+        line-height: 1;
+      }
+      .sang-sub {
+        font-family: var(--disp);
+        font-size: 0.72rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--wine);
+        margin-top: 6px;
+      }
+      .patrika-blessing {
+        text-align: center;
+        padding: 24px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(254, 245, 238, 0.75));
+        border: 1px solid rgba(190, 151, 47, 0.45);
+        border-radius: 16px;
+        box-shadow: 0 8px 26px rgba(122, 42, 65, 0.08);
+        margin: 28px auto;
+        max-width: 860px;
+      }
+      .patrika-blessing .uttsav-title {
+        font-family: var(--deva);
+        font-size: clamp(1.3rem, 2.8vw, 1.85rem);
+        color: var(--wine-deep);
+        font-weight: 700;
+        margin-bottom: 8px;
+        letter-spacing: 0.03em;
+      }
+      .patrika-blessing .uttsav-sub {
+        font-family: var(--serif);
+        font-style: italic;
+        font-size: clamp(1.08rem, 2.3vw, 1.35rem);
+        color: var(--ink);
+        max-width: 48ch;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+      .patrika-wishes-grid {
+        display: grid;
+        grid-template-columns: 1.35fr 1fr;
+        gap: 18px;
+        margin-top: 24px;
+        text-align: left;
+      }
+      .wish-box {
+        background: rgba(255, 255, 255, 0.68);
+        border: 1px solid rgba(190, 151, 47, 0.4);
+        border-radius: 14px;
+        padding: 22px 24px;
+        backdrop-filter: blur(6px);
+      }
+      .wish-title {
+        font-family: var(--deva);
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--wine-deep);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-bottom: 1px solid rgba(190, 151, 47, 0.25);
+        padding-bottom: 8px;
+      }
+      .wish-names {
+        font-size: 0.92rem;
+        color: var(--ink);
+        line-height: 1.75;
+      }
+      .annu-card {
+        margin-top: 14px;
+        background: rgba(122, 42, 65, 0.08);
+        border: 1px dashed var(--gold-deep);
+        border-radius: 12px;
+        padding: 10px 14px;
+        font-family: var(--serif);
+        font-style: italic;
+        font-size: 1.05rem;
+        color: var(--wine-deep);
+        font-weight: 600;
+        text-align: center;
+      }
+      .phone-contact {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 14px;
+      }
+      .phone-chip {
+        font-family: var(--sans);
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--wine);
+        background: #fff;
+        border: 1px solid rgba(190, 151, 47, 0.45);
+        padding: 6px 14px;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .phone-chip:hover {
+        background: var(--wine);
+        color: #fff;
+      }
+      .barat-note-box {
+        position: relative;
+        max-width: 820px;
+        margin: 28px auto 0;
+        padding: 18px 24px;
+        background: linear-gradient(135deg, rgba(255, 245, 235, 0.9), rgba(254, 235, 240, 0.9));
+        border: 1px dashed var(--gold-deep);
+        border-radius: 14px;
+        text-align: center;
+        box-shadow: 0 6px 20px rgba(122, 42, 65, 0.08);
+      }
+      .barat-note-box .bn-head {
+        font-family: var(--deva);
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--wine-deep);
+        margin-bottom: 6px;
+      }
+      .barat-note-box .bn-text {
+        font-size: 0.95rem;
+        color: var(--ink);
+        line-height: 1.65;
+      }
+      @media (max-width: 768px) {
+        .patrika-grid {
+          grid-template-columns: 1fr;
+        }
+        .patrika-mid {
+          padding: 6px 0;
+        }
+        .patrika-wishes-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
       /* ========== EVENTS ========== */
@@ -1396,7 +1651,7 @@
   <body class="loading">
     <!-- ===== LOADER ===== -->
     <div class="loader" id="loader">
-      <div class="loader-names">Kamayani<span>weds</span>Ankit</div>
+      <div class="loader-names">Akarsh<span>weds</span>Pallavi</div>
       <div class="loader-bar"><i id="loadBar"></i></div>
       <div class="loader-pct" id="loadPct">0%</div>
     </div>
@@ -1416,13 +1671,13 @@
             </div>
           </div>
           <h1 class="hero-names" id="hNames" style="opacity: 0">
-            <span class="nm">Kamayani</span>
+            <span class="nm">Akarsh</span>
             <span class="weds">weds</span>
-            <span class="nm">Ankit</span>
+            <span class="nm">Pallavi</span>
           </h1>
           <div class="hero-namemeta" id="hMeta" style="opacity: 0">
-            <span>31 Oct &amp; 1 Nov 2026</span><span class="dot"></span
-            ><span>Nahargarh Palace, Ranthambore</span>
+            <span>23–27 November 2026</span><span class="dot"></span
+            ><span>Hotel Ramada, Jamshedpur</span>
           </div>
         </div>
         <div class="scroll-cue" id="scrollCue">
@@ -1441,28 +1696,98 @@
           <img
             src="./assets/gfx/ganeshji.png"
             style="width: 10vh; height: 10vh"
-            alt=""
+            alt="Lord Ganesha"
           />
-          <div class="om">ॐ श्री गणेशाय नमः</div>
+          <div class="om">॥ श्री गणेशाय नमः ॥</div>
+          <div class="shloka-box">
+            वक्रतुण्ड महाकाय, सूर्यकोटि समप्रभः !<br />
+            निर्विघ्नं कुरुमें देव, सर्वकार्येषु सर्वदा !!
+          </div>
           <div class="invite-lead">
-            The <span style="font-weight: 900">Gupta</span> and
-            <span style="font-weight: 900">Nagar</span> families <br />
-            warmly welcome you to celebrate the marriage of
+            मान्यवर,<br />
+            शहनाई की गूंज एवं मंत्रोच्चार के पावन स्वरों से<br />
+            आच्छादित परमेश्वर की असीम कृपा से
           </div>
         </div>
         <div class="invite-names reveal">
-          <span class="n">Kamayani</span>
-          <span class="weds">&</span>
-          <span class="n">Ankit</span>
+          <span class="n">Akarsh</span>
+          <span class="weds">संग</span>
+          <span class="n">Pallavi</span>
         </div>
-        <p class="invite-body reveal">
-          as they tie the knot amid the royal splendour of Ranthambore
-        </p>
-        <div class="invite-where reveal">
-          <span data-wedding-date="range-ordinal">31st Oct &amp; 1st Nov 2026</span> &nbsp;·&nbsp;
-          <b>Nahargarh Palace, Ranthambore</b>
+
+        <div class="patrika-sec">
+          <div class="patrika-grid reveal">
+            <!-- Groom Card -->
+            <div class="patrika-card groom-card">
+              <div class="patrika-badge">वर पक्ष · Groom</div>
+              <div class="patrika-person">चि० आकर्ष आनन्द</div>
+              <div class="patrika-person-en">Akarsh Anand</div>
+              <div class="patrika-divider-sm"></div>
+              <div class="patrika-relation"><b>सुपौत्र:</b> स्मृतिशेष सियाराम प्रसाद साह एवं स्मृतिशेष पुतुल देवी</div>
+              <div class="patrika-relation"><b>सुपुत्र:</b> स्मृतिशेष अनिल कुमार एवं श्रीमती मधु कुमारी</div>
+              <div class="patrika-addr">
+                📍 502, 5वीं मंजिल, सरला आर्केड, सतीघाट रोड,<br />
+                HDFC बैंक के ऊपर, कदमा, जमशेदपुर, झारखण्ड
+              </div>
+            </div>
+
+            <div class="patrika-mid reveal">
+              <span class="sang-symbol">संग</span>
+              <span class="sang-sub">weds</span>
+            </div>
+
+            <!-- Bride Card -->
+            <div class="patrika-card bride-card">
+              <div class="patrika-badge">वधू पक्ष · Bride</div>
+              <div class="patrika-person">आयु० पल्लवी कुमारी साहू</div>
+              <div class="patrika-person-en">Pallavi Kumari Sahu</div>
+              <div class="patrika-divider-sm"></div>
+              <div class="patrika-relation"><b>सुपौत्री:</b> स्मृतिशेष रामेश्वर साहू एवं स्मृतिशेष भगवती देवी</div>
+              <div class="patrika-relation"><b>सुपुत्री:</b> श्री प्रमोद कुमार साहू एवं श्रीमती रीना साहू</div>
+              <div class="patrika-addr">
+                📍 पंडरा, राँची, झारखण्ड
+              </div>
+            </div>
+          </div>
+
+          <div class="patrika-blessing reveal">
+            <div class="uttsav-title">॥ के पावन परिणयोत्सव ॥</div>
+            <div class="uttsav-sub">
+              की मधुर बेला पर पधार कर वर-वधू को शुभाशीर्वाद प्रदान कर हमें अनुग्रहित करें।
+            </div>
+          </div>
+
+          <div class="invite-where reveal">
+            <span>23 · 24 · 25 · 27 नवम्बर 2026</span> &nbsp;·&nbsp;
+            <b>रमाडा होटल (Hotel Ramada), बिष्टुपुर, जमशेदपुर</b>
+          </div>
+
+          <div class="patrika-wishes-grid reveal">
+            <div class="wish-box darshan">
+              <div class="wish-title"><span>🌸 दर्शनाभिलाषी</span></div>
+              <p class="wish-names">
+                रमेश कुमार साह, संजय कुमार सिन्हा, सुमन कुमार, गौतम कुमार, सत्यपाल प्रसाद,
+                सुखदेव साव, सत्यजीत रमनित, सुकृति राज, शिवप्रिया, राहुल कुमार, सूरज कुमार
+                एवं समस्त परिवार।
+              </p>
+            </div>
+            <div class="wish-box vineet">
+              <div class="wish-title"><span>🙏 विनीत</span></div>
+              <p class="wish-names" style="font-weight: 700; font-size: 1.08rem; color: var(--wine-deep);">
+                श्रीमती मधु कुमारी
+              </p>
+              <div class="annu-card">
+                <span>❤️ मेले भैया की शादी में जलूल-जलूल आना : <b>अन्नू</b></span>
+              </div>
+              <div class="phone-contact">
+                <a class="phone-chip" href="tel:+918792390458">📞 8792390458</a>
+                <a class="phone-chip" href="tel:+917258883959">📞 7258883959</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flourish reveal">
+
+        <div class="flourish reveal" style="margin-top: 36px;">
           <span class="l"></span><span class="o"></span><span class="d"></span
           ><span class="o"></span><span class="l r"></span>
         </div>
@@ -1519,18 +1844,19 @@
           ><i></i
         ></span>
 
-        <!-- <div class="eyebrow reveal">On the following events</div> -->
         <h2 class="title reveal">
-          Two days <span class="gold">of Festivities</span>
+          वैवाहिक <span class="gold">कार्यक्रम</span>
         </h2>
         <div class="flourish reveal">
           <span class="l"></span><span class="o"></span><span class="d"></span
           ><span class="o"></span><span class="l r"></span>
         </div>
-        <p class="sub reveal">A little look at what awaits...</p>
+        <p class="sub reveal" style="font-family: var(--deva); font-size: 1.08rem; color: var(--wine);">
+          मंगलम् भगवान विष्णु : मंगलम् गरुड़ध्वज : ! &nbsp; मंगलम् पुण्डरी काक्ष : मंगलाय तनोहरि : !!
+        </p>
 
         <div class="timeline">
-          <!-- monogram crest -->
+          <!-- monogram crest with A&P (Groom first then Bride) -->
           <div class="tl-crest reveal">
             <svg
               viewBox="0 0 120 96"
@@ -1558,77 +1884,107 @@
                 stroke="none"
                 letter-spacing="1"
               >
-                K&amp;A
+                A&amp;P
               </text>
               <path d="M12 30c-5 4-8 4-10 2M108 30c5 4 8 4 10 2" />
             </svg>
           </div>
 
-          <!-- ─── DAY ONE ─── -->
+          <!-- ─── 23 NOV: HALDI LEPAN & MATKOR ─── -->
           <div class="day-badge reveal">
-            <div class="day-badge-pill">Day One · 31 October 2026</div>
+            <div class="day-badge-pill">सोमवार · 23 नवम्बर 2026 / Mon, 23 Nov</div>
           </div>
 
           <div class="ev-row reveal">
             <a class="ev" href="events/haldi.html">
               <span class="ev-arch"
-                ><img class="ev-photo" src="assets/gfx/haldi-home.png" alt=""
+                ><img class="ev-photo" src="assets/gfx/haldi-home.png" alt="हल्दी लेपन एवं मटकोर"
               /></span>
               <div class="ev-body">
-                <div class="ev-time">2:00 PM</div>
-                <div class="ev-name">Haldi</div>
+                <div class="ev-time">दिन में · Haldi Ceremony</div>
+                <div class="ev-name">हल्दी लेपन एवं मटकोर</div>
                 <div class="ev-divider"><i></i></div>
-                <div class="ev-venue"><b>The Bagichi</b></div>
+                <div class="ev-venue"><b>निवास स्थान, कदमा</b><br /><span style="font-size:0.8rem; color:var(--ink-soft);">502, सरला आर्केड, सतीघाट रोड, जमशेदपुर</span></div>
               </div>
             </a>
+          </div>
+
+          <!-- ─── 24 NOV: MEHNDI SAMAROH ─── -->
+          <div class="day-badge reveal">
+            <div class="day-badge-pill">मंगलवार · 24 नवम्बर 2026 / Tue, 24 Nov</div>
           </div>
 
           <div class="ev-row right reveal">
             <a class="ev" href="events/sangeet.html">
               <span class="ev-arch"
-                ><img class="ev-photo" src="assets/gfx/sangeet-home.png" alt=""
+                ><img class="ev-photo" src="assets/gfx/sangeet-home.png" alt="मेहंदी समारोह"
               /></span>
               <div class="ev-body">
-                <div class="ev-time">8:00 PM</div>
-                <div class="ev-name">Sangeet</div>
+                <div class="ev-time">संध्या · Evening Ceremony</div>
+                <div class="ev-name">मेहंदी समारोह</div>
                 <div class="ev-divider"><i></i></div>
-                <div class="ev-venue"><b>Arjun Mahal</b></div>
+                <div class="ev-venue"><b>निवास स्थान, कदमा</b><br /><span style="font-size:0.8rem; color:var(--ink-soft);">जमशेदपुर, झारखण्ड</span></div>
               </div>
             </a>
           </div>
 
-          <!-- ─── DAY TWO ─── -->
+          <!-- ─── 25 NOV: BARAT PRASHTHAN & SHUBH VIVAH ─── -->
           <div class="day-badge reveal">
-            <div class="day-badge-pill">Day Two · 1 November 2026</div>
+            <div class="day-badge-pill">बुधवार · 25 नवम्बर 2026 / Wed, 25 Nov</div>
           </div>
 
           <div class="ev-row reveal">
-            <a class="ev" href="events/bhoj.html">
+            <div class="ev">
               <span class="ev-arch"
-                ><img class="ev-photo" src="assets/gfx/bhoj-home.png" alt=""
+                ><img class="ev-photo" src="assets/gfx/ev-bhoj.png" alt="बारात प्रस्थान"
               /></span>
               <div class="ev-body">
-                <div class="ev-time">12:00 PM-4:30PM</div>
-                <div class="ev-time">Feel free to join us at your leisure</div>
-                <div class="ev-name">Rajwadi Bhoj</div>
+                <div class="ev-time">दोपहर 12:00 बजे / 12:00 PM</div>
+                <div class="ev-name">बारात प्रस्थान</div>
                 <div class="ev-divider"><i></i></div>
-                <div class="ev-venue"><b>Chandra Mahal</b></div>
+                <div class="ev-venue"><b>कदमा, जमशेदपुर से राँची</b><br /><span style="font-size:0.8rem; color:var(--wine);">निवास स्थान से राँची के लिए प्रस्थान</span></div>
               </div>
-            </a>
+            </div>
           </div>
 
           <div class="ev-row right reveal">
             <a class="ev" href="events/phera.html">
               <span class="ev-arch"
-                ><img class="ev-photo" src="assets/gfx/wed-home.png" alt=""
+                ><img class="ev-photo" src="assets/gfx/wed-home.png" alt="शुभविवाह"
               /></span>
               <div class="ev-body">
-                <div class="ev-time">5:00 PM</div>
-                <div class="ev-name">The Wedding</div>
+                <div class="ev-time">पावन परिणयोत्सव · Wedding Hours</div>
+                <div class="ev-name">शुभविवाह</div>
                 <div class="ev-divider"><i></i></div>
-                <div class="ev-venue"><b>Hathi Kund</b></div>
+                <div class="ev-venue"><b>पंडरा, राँची</b><br /><span style="font-size:0.8rem; color:var(--ink-soft);">राँची, झारखण्ड</span></div>
               </div>
             </a>
+          </div>
+
+          <!-- ─── 27 NOV: PREETIBHOJ / RECEPTION ─── -->
+          <div class="day-badge reveal">
+            <div class="day-badge-pill">शुक्रवार · 27 नवम्बर 2026 / Fri, 27 Nov</div>
+          </div>
+
+          <div class="ev-row reveal">
+            <a class="ev" href="events/bhoj.html">
+              <span class="ev-arch"
+                ><img class="ev-photo" src="assets/gfx/bhoj-home.png" alt="प्रीतिभोज"
+              /></span>
+              <div class="ev-body">
+                <div class="ev-time">संध्या 7:00 बजे से / 7:00 PM Onwards</div>
+                <div class="ev-name">प्रीतिभोज (Grand Reception)</div>
+                <div class="ev-divider"><i></i></div>
+                <div class="ev-venue"><b>रमाडा होटल (Hotel Ramada)</b><br /><span style="font-size:0.8rem; color:var(--ink-soft);">बिष्टुपुर, जमशेदपुर</span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="barat-note-box reveal">
+          <div class="bn-head">🌸 विशेष सूचना 🌸</div>
+          <div class="bn-text">
+            <b>नोट :</b> बारात दिनांक <b>25.11.2026, बुधवार</b> को <b>दोपहर 12:00 बजे</b> हमारे निवास स्थान <b>कदमा, जमशेदपुर</b> से <b>राँची</b> के लिए प्रस्थान करेगी।
           </div>
         </div>
       </section>
@@ -1652,10 +2008,11 @@
           data-par="8"
         />
         <p class="quote reveal">
-          We would love to celebrate with you and hope you'll join us in
-          Ranthambore!
+          मंगलम् भगवान विष्णु : मंगलम् गरुड़ध्वज : !<br />
+          मंगलम् पुण्डरी काक्ष : मंगलाय तनोहरि : !!<br /><br />
+          We warmly invite you to celebrate this blessed union and shower your love &amp; blessings upon us!
         </p>
-        <div class="by reveal">— Kamayani &amp; Ankit</div>
+        <div class="by reveal">— Akarsh &amp; Pallavi</div>
       </section>
 
       <!-- ===== THINGS TO KNOW ===== -->
@@ -1684,10 +2041,10 @@
                 <line x1="3" y1="15" x2="20" y2="15" />
               </svg>
             </div>
-            <h4>Hashtag</h4>
+            <h4>Wedding Hashtag</h4>
             <p>
-              Share your moments with us — please use
-              <a href="#">#ankitkikhushy</a> on all your photos and reels.
+              Capture and share all your wonderful memories with us using
+              <a href="#">#AkarshKiPallavi</a> on your posts, reels, and photos.
             </p>
           </div>
           <a href="events/stay.html" class="know-item know-link reveal"
@@ -1708,14 +2065,13 @@
                 <path d="M3 18v2M21 18v2" />
               </svg>
             </div>
-            <h4>Travel</h4>
+            <h4>Travel &amp; Stay</h4>
             <p class="stay-contact">
-              Find travel directions, transportation options, and recommended nearby accommodations for a comfortable wedding stay.
-              
+              Travel directions, transit connectivity between Jamshedpur &amp; Ranchi, and helpline contacts.
             </p>
             <span class="know-cue">View details →</span> 
           </a>
-          <a class="know-item know-link reveal" href="events/visa.html"
+          <a class="know-item know-link reveal" href="events/stay.html"
             ><div class="k-ic">
               <svg
                 viewBox="0 0 24 24"
@@ -1725,28 +2081,24 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <rect x="4" y="3" width="16" height="18" rx="2.5" />
-                <circle cx="12" cy="9.5" r="2.6" />
-                <path d="M8.5 16.5a3.5 3.5 0 0 1 7 0" />
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
             </div>
-            <h4>Visa &amp; Vaccinations</h4>
+            <h4>Contact &amp; Assistance</h4>
             <p>
-              What international guests need to enter India, plus health advice
-              before you fly. <span class="know-cue">View details →</span>
+              Need any help or directions? Reach out to us at <b>8792390458</b> or <b>7258883959</b>. <span class="know-cue">View helpline →</span>
             </p></a
           >
         </div>
 
         <div class="venue-line reveal">
-          <div class="venue-name">Nahargarh Palace, Ranthambore</div>
+          <div class="venue-name">रमाडा होटल (Hotel Ramada), बिष्टुपुर, जमशेदपुर</div>
           <p class="venue-addr">
-            Perched on the Aravalli ridge above the City — a royal hilltop
-            palace beneath the Ranthambore sky.
+            Bishtupur, Jamshedpur, Jharkhand — Venue for the grand Preetibhoj on Friday, 27 November 2026.
           </p>
           <a
             class="pill"
-            href="https://maps.google.com/?q=Nahargarh+Palace+Ranthambore"
+            href="https://maps.google.com/?q=Ramada+by+Wyndham+Jamshedpur+Bishtupur"
             target="_blank"
             rel="noopener"
             ><svg
@@ -1760,7 +2112,7 @@
               <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z" />
               <circle cx="12" cy="10" r="2.4" />
             </svg>
-            See the route</a
+            See the route on Maps</a
           >
         </div>
       </section>
@@ -1798,15 +2150,15 @@
             ><span class="o"></span><span class="l r"></span>
           </div>
           <div class="footer-names">
-            <span class="n">Kamayani</span><br /><span class="weds">weds</span
-            ><span class="n">Ankit</span>
+            <span class="n">Akarsh</span><br /><span class="weds">weds</span
+            ><span class="n">Pallavi</span>
           </div>
           <div class="footer-tag">
-            <b>The journey begins, beneath the Ranthambore sky</b>
+            <b>आकर्ष संग पल्लवी · 23–27 नवम्बर 2026</b>
           </div>
-          <div class="footer-hash">#ankitkikhushy</div>
+          <div class="footer-hash">#AkarshKiPallavi</div>
           <div class="footer-credit">
-            31 October &amp; 1 November 2026 · Nahargarh Palace, Ranthambore
+            23, 24, 25 &amp; 27 November 2026 · Hotel Ramada, Jamshedpur &amp; Ranchi
           </div>
         </div>
       </footer>

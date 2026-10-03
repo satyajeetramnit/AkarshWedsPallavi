@@ -1,13 +1,22 @@
 window.WEDDING_DATA = {
-  bride: "Shivani",
-  groom: "Shubham",
-  venue: "Nahargarh Palace, Ranopur",
+  groom: "Akarsh",
+  groomFull: "चि० आकर्ष आनन्द",
+  bride: "Pallavi",
+  brideFull: "आयु० पल्लवी कुमारी साहू",
+  venue: "Hotel Ramada, Bishtupur, Jamshedpur",
   dates: {
-    dayOne: "2026-11-21",
-    dayTwo: "2026-11-22",
-    rsvpBy: "2026-11-25",
-    countdownTime: "13:00:00+05:30",
+    haldi: "2026-11-23",
+    mehndi: "2026-11-24",
+    barat: "2026-11-25",
+    wedding: "2026-11-25",
+    reception: "2026-11-27",
+    dayOne: "2026-11-23",
+    dayTwo: "2026-11-25",
+    dayThree: "2026-11-27",
+    rsvpBy: "2026-11-20",
+    countdownTime: "12:00:00+05:30",
   },
+  phones: ["8792390458", "7258883959"],
 };
 
 (() => {
@@ -36,24 +45,21 @@ window.WEDDING_DATA = {
       month: shortMonth ? "short" : "long",
       year: "numeric",
     });
+
   const replacements = new Map([
     ["Kamayani", bride],
     ["Ankit", groom],
+    ["Shivani", bride],
+    ["Shubham", groom],
     ["Nahargarh Palace, Ranthambore", venue],
-    ["31 Oct & 1 Nov 2026", `${shortDate(dates.dayOne)} & ${shortDate(dates.dayTwo)} ${dates.dayTwo.slice(0, 4)}`],
-    ["31 October & 1 November 2026", `${longDate(dates.dayOne).replace(/ \d{4}$/, "")} & ${longDate(dates.dayTwo)}`],
-    ["Friday, 31 October 2026", weekdayDate(dates.dayOne)],
-    ["Saturday, 1 November 2026", weekdayDate(dates.dayTwo)],
-    ["Friday, 31 Oct 2026", weekdayDate(dates.dayOne, true)],
-    ["Saturday, 1 Nov 2026", weekdayDate(dates.dayTwo, true)],
-    ["Fri, 31 Oct", weekdayDate(dates.dayOne, true, true).replace(/, \d{4}$/, "")],
-    ["Sat, 1 Nov", weekdayDate(dates.dayTwo, true, true).replace(/, \d{4}$/, "")],
-    ["31 October 2026", longDate(dates.dayOne)],
-    ["1 November 2026", longDate(dates.dayTwo)],
-    ["31 Oct", shortDate(dates.dayOne)],
-    ["1 Nov", shortDate(dates.dayTwo)],
-    ["1st October 2026", `${ordinal(dates.rsvpBy)} ${formatDate(dates.rsvpBy, { month: "long", year: "numeric" })}`],
+    ["Nahargarh Palace, Ranopur", venue],
+    ["31 Oct & 1 Nov 2026", "23 – 27 Nov 2026"],
+    ["31 October & 1 November 2026", "23 to 27 November 2026"],
+    ["31 October 2026", "23 November 2026"],
+    ["1 November 2026", "25 November 2026"],
+    ["#ankitkikhushy", "#AkarshKiPallavi"],
   ]);
+
   const replacementPattern = new RegExp(
     [...replacements.keys()]
       .sort((left, right) => right.length - left.length)
@@ -75,12 +81,6 @@ window.WEDDING_DATA = {
       for (const attribute of element.attributes) {
         attribute.value = replaceValues(attribute.value);
       }
-    });
-    document.querySelectorAll("[data-wedding-date='range-ordinal']").forEach((element) => {
-      element.textContent = `${ordinal(dates.dayOne)} ${formatDate(dates.dayOne, { month: "short" })} & ${ordinal(dates.dayTwo)} ${formatDate(dates.dayTwo, { month: "short", year: "numeric" })}`;
-    });
-    document.querySelectorAll("[data-wedding-date='rsvp']").forEach((element) => {
-      element.textContent = `${ordinal(dates.rsvpBy)} ${formatDate(dates.rsvpBy, { month: "long", year: "numeric" })}`;
     });
   };
 
